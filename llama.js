@@ -1,10 +1,13 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch')
+const fs = require('fs')
 console.log(Discord.IntentsBitField)
 
 const llamaNumber = '1182421638684360835'
 
 var toggleHistory = false
+
+const token = fs.readFileSync('token.txt','utf8')
 
 
 
@@ -146,4 +149,4 @@ client.on(Discord.Events.MessageCreate, msg => {
     }
 });
 
-client.login('MTE4MjQyMTYzODY4NDM2MDgzNQ.GhEBqv.TEmWssNzxJGjEireVFpGgkcOV7ENjYPy_Zw5B0');
+client.login(token);

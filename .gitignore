@@ -9,3 +9,4 @@ run-llama.bat
 serveScript.bat
 start-llama.bat
 testResponse.json
+token.txt
